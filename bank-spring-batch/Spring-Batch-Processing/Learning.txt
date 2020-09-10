@@ -1,0 +1,1 @@
+Batch processing c est traiter des donnees qui ont ete cumulees pendant une periode deja passee.

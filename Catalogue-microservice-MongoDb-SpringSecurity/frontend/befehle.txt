@@ -1,0 +1,5 @@
+npm --version = version von npm
+ng --version = version von angular
+git --version  = version de git
+
+ng new "nom du projet"  = generer un projet angular

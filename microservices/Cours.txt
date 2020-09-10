@@ -1,0 +1,16 @@
+Le concept des microservices consiste a decouper un grand probleme en de petites unites. 
+Chaque partie de l application est developpee de maniere independante qu on appele microservice.
+
+En gros un microservice est une petite application qui fait partir d une grande application.
+
+Register Service est l annuaire de l application. Chaque Service qui demarre doit s enregistrer chez lui.
+Chaque microservice publie 3 Infos: le nom du microservice, le IP et le numero de port.
+
+Gateway service: Tous les clients interagissent uniquement avec le gateway. 
+Toutes les requetes sont envoyees chez lui avec le nom du service et c est lui qui se charge de contacter le microservice.
+
+Configuration service: centraliser la configuration de l ensemble des microservices. 
+Un seul fichier application.properties est genere. Chaque service se connecte chez lui a chaque demarrage pour prendre sa configuration.
+
+Pour gerer les pb de montees en charge on demarre les microservices en plusieurs instances. 
+Le principe de Load Balancer qui est l equilibrage des charges (repartition des charges)
