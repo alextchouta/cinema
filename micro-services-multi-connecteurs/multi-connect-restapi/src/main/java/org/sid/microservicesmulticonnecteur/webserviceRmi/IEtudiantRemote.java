@@ -1,12 +1,11 @@
-package webserviceRmi;
+package org.sid.microservicesmulticonnecteur.webserviceRmi;
 
-import model.Etudiant;
-import model.Formation;
+import org.sid.microservicesmulticonnecteur.Model.Etudiant;
+import org.sid.microservicesmulticonnecteur.Model.Formation;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
-
 
 /*
  * l interface doit respecter les 2 conditions suivantes:
