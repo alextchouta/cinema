@@ -3,3 +3,10 @@ ng --version = version von angular
 git --version  = version de git
 
 ng new "nom du projet"  = generer un projet angular
+
+Create a new Angular Project = ng new project
+installer bootstrap = npm install --save bootstrap@3
+installer jquery = npm install --save jquery
+creer une application pour deployer = ng build --prod
+
+Angular se basse sur le pattern mvvm = model view view model = ce qui veut dire que des que les donnees dans le model change, il reactualise la vue automatiquement

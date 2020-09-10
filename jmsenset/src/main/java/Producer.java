@@ -1,7 +1,7 @@
 import org.apache.activemq.ActiveMQConnectionFactory;
 
 import javax.jms.*;
-import java.util.Scanner;
+
 
 public class Producer {
 

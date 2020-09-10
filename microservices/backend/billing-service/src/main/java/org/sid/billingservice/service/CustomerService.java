@@ -1,4 +1,4 @@
-package org.sid.billingservice.repository;
+package org.sid.billingservice.service;
 
 import org.sid.billingservice.model.Customer;
 import org.springframework.cloud.openfeign.FeignClient;
