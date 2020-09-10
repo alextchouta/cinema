@@ -1,4 +1,4 @@
-package org.sid.restcontrollermvcunittest.model;
+package org.sid.restcontrollermvcunittest.controller;
 
 public class Product {
     private String id;
