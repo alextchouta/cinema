@@ -7,6 +7,7 @@ import org.sid.importexcelindatabase.repository.TutorialRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -29,5 +30,14 @@ public class ExcelServiceImpl implements ExcelService {
     @Override
     public List<Tutorial> getAllTutorials() {
         return repository.findAll();
+    }
+
+    @Override
+    public ByteArrayInputStream load() {
+
+        List<Tutorial> tutorials = repository.findAll();
+
+        ByteArrayInputStream in = ExcelHelper.tutorialsToExcel(tutorials);
+        return in;
     }
 }
